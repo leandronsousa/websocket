@@ -1,0 +1,15 @@
+<div id="messages">
+    <button class="btn btn-primary" (click)="onSendMessage()">
+        Send Message
+    </button>
+
+    <button class="btn btn-primary" (click)="receiveMessage()">
+        Receive Message
+    </button>
+    <h2>Received messages</h2>
+    <ol>
+        <ul class="message" *ngFor="let message of receivedMessages">
+            <li>{{ message }}</li>
+        </ul>
+    </ol>
+</div>
